@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class TestingCoercion {
 
@@ -22,6 +23,7 @@ public class TestingCoercion {
 		} catch (NoSuchMethodException noSuchMethodException) {
 			// test has failed.
 			System.out.println(noSuchMethodException);
+			fail();
 		}
 	}
 
